@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="centercontrolleros.com.icentercontrolleros.ui.activity.ManagerAppActivity">
+    <android.support.v7.widget.Toolbar
+        xmlns:local="http://schemas.android.com/apk/res-auto"
+        local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toobarFavourite"></android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:id="@+id/relativeLayout_add"
+        android:layout_below="@id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hightlight_buttonadd"
+        android:clickable="true"
+        android:paddingTop="@dimen/size10dp"
+
+        android:paddingBottom="@dimen/size10dp">
+
+        <ImageView
+            android:id="@+id/img_add_app"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="@dimen/size20dp"
+            android:layout_marginLeft="@dimen/size16dp"
+            android:src="@drawable/ic_addapp"/>
+
+        <TextView
+            android:id="@+id/txt_add_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_add_app"
+            android:layout_marginTop="5dp"
+            android:layout_alignBaseline="@id/img_add_app"
+            android:text="@string/text_add_app"
+            android:textSize="@dimen/size16dp"
+            android:textColor="#000"/>
+
+        <ImageView
+            android:id="@+id/img_arrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size15dp"
+            android:layout_alignBaseline="@id/img_add_app"
+            android:src="@drawable/ic_arrow"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:id="@+id/recycleFavourite">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content_list_drag">
+    </FrameLayout>
+</LinearLayout>

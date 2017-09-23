@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size10dp"
+        android:layout_marginRight="@dimen/size10dp"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="@dimen/size10dp"
+            android:layout_marginRight="@dimen/size10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageButton
+                        android:id="@+id/img_rotate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/size5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/hightlight_button_frame"
+                        android:src="@drawable/ic_lock_orientation"/>
+
+                    <ImageButton
+                        android:id="@+id/img_night"
+                        android:layout_width="0dp"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/hightlight_button_frame"
+                        android:src="@drawable/ic_night_off"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnscreentimeout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size5dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="@dimen/size5dp"
+                    android:background="@drawable/hilightlight_button"
+                    android:drawableLeft="@drawable/ic_airplay"
+                    android:drawablePadding="@dimen/size5dp"
+                    android:paddingBottom="@dimen/size10dp"
+                    android:paddingTop="@dimen/size10dp"
+                    android:text="Thời gian chờ"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="@dimen/size10dp"
+            android:layout_marginRight="@dimen/size10dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginRight="@dimen/size5dp"
+                android:layout_weight="1">
+
+
+                <centercontrolleros.com.icentercontrolleros.ui.customview.VerticalSeebar
+                    android:id="@+id/seebarlight"
+                    android:layout_width="70dp"
+                    android:layout_height="150dp"
+                    android:max="255"
+                    android:padding="@dimen/size5dp"
+                    android:progressDrawable="@drawable/background_seebar"
+                    android:thumb="@null"/>
+
+                <ImageView
+                    android:id="@+id/img_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="@dimen/size20dp"
+                    android:src="@drawable/ic_light_max"/>
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="@dimen/size5dp"
+                android:layout_weight="1">
+
+                <centercontrolleros.com.icentercontrolleros.ui.customview.VerticalSeebar
+                    android:id="@+id/seebarVolume"
+                    android:layout_width="70dp"
+                    android:layout_height="150dp"
+                    android:longClickable="true"
+                    android:padding="@dimen/size5dp"
+                    android:progressDrawable="@drawable/background_seebar"
+                    android:thumb="@null"/>
+
+                <ImageView
+                    android:id="@+id/img_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="@dimen/size20dp"
+                    android:src="@drawable/ic_volume_mute"/>
+            </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

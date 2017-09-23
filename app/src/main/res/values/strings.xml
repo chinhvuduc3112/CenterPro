@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">iControl Center</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="text_power">Start Center Controller</string>
+    <string name="text_add_app">Add favorite app</string>
+    <string name="text_music">Music Control</string>
+    <string name="text_setting">Setting Manager</string>
+    <string name="permission_denie">You did rejected permission,you can not use this service
+Please turn on permissions at [Setting] > [Permission]</string>
+
+    <string-array name="listtimeout">
+        <item>15 second</item>
+        <item>30 second</item>
+        <item>1 minute</item>
+        <item>2 minute</item>
+        <item>10 minute</item>
+        <item>30 minute</item>
+    </string-array>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="SETTING">
+
+        <ListPreference
+            android:entries="@array/updatePositionLabel"
+            android:entryValues="@array/updatePositionValues"
+            android:defaultValue="3"
+            android:key="prefUpdatePosion"
+            android:summary="Set Update Location for Bottom Bar."
+            android:title="Location for Bottom Bar"/>
+
+        <ListPreference
+            android:entries="@array/updateSizeLabel"
+            android:entryValues="@array/updateSizeValues"
+            android:defaultValue="3"
+            android:key="prefUpdateSize"
+            android:summary="Set Update Size for Bottom Bar."
+            android:title="Modify size for Bottom Bar"/>
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="Advanced Settings">
+        <ListPreference
+            android:entries="@array/updateBackgroundLabel"
+            android:entryValues="@array/updateBackgroundValues"
+            android:defaultValue="4"
+            android:shouldDisableView="true"
+            android:key="prefUpdateBackground"
+            android:summary="Set Update Background"
+            android:title="Modify background"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
